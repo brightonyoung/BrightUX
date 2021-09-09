@@ -1,0 +1,165 @@
+
+var yotpoWidgetsContainer = yotpoWidgetsContainer || {};
+(function(){
+    var loader = {
+        loadDep: function (link, onLoad, strategy) {
+            var script = document.createElement('script');
+            script.onload = onLoad || function(){};
+            script.src = link;
+            if (strategy === 'defer') {
+                script.defer = true;
+            } else if (strategy === 'async') {
+                script.async = true;
+            }
+            script.setAttribute("type", "text/javascript");
+            script.setAttribute("charset", "utf-8");
+            document.head.appendChild(script);
+        },
+        config: {
+            data: {
+                guid: "0qZr8M8VOKJVvK5PSIeSCw"
+            },
+            widgets: {
+            
+                "13835": {
+                    instanceId: "13835",
+                    instanceVersionId: "849848",
+                    templateAssetUrl: "https://cdn-widget-assets.yotpo.com/widget-referral-widget/app.v1.5.20-1829.js",
+                    cssOverrideAssetUrl: "https://cdn-widget-assets.yotpo.com/ReferralWidget/0qZr8M8VOKJVvK5PSIeSCw/css-overrides/css-overrides.2021_01_15_15_18_17_636.css",
+                    customizationCssUrl: "",
+                    customizations: {
+                      "background-color": "rgba(248,248,249,1)",
+                      "background-image-url": "https://cdn-widget-assets.yotpo.com/static_assets/0qZr8M8VOKJVvK5PSIeSCw/images/image_2021_08_20_17_54_33_957",
+                      "customer-email-view-button-text": "NEXT",
+                      "customer-email-view-description": "Give your friends $25 off on their first order of $125+ (excluding Final Sale items) and get $25 for each successful referral.",
+                      "customer-email-view-header": "Refer a Friend",
+                      "customer-email-view-title": "GIVE $25, GET $25",
+                      "default-toggle": true,
+                      "description-color": "rgba(51,49,50,1)",
+                      "description-font-size": "20px",
+                      "final-view-button-text": "REFER MORE FRIENDS",
+                      "final-view-description": "Remind your friends to check their emails",
+                      "final-view-error-description": "We were unable to send the referral link",
+                      "final-view-error-text": "GO BACK",
+                      "final-view-error-title": "SOMETHING WENT WRONG",
+                      "final-view-title": "THANKS FOR REFERRING",
+                      "fonts-primary-font-name-and-url": "Lato@700|https://fonts.googleapis.com/css?family=Lato:700\u0026display=swap",
+                      "fonts-secondary-font-name-and-url": "Lato@400|https://fonts.googleapis.com/css?family=Lato:400\u0026display=swap",
+                      "header-color": "rgba(51,49,50,1)",
+                      "header-font-size": "18px",
+                      "main-share-option-desktop": "main_share_email",
+                      "main-share-option-mobile": "main_share_email",
+                      "next-button-background-color": "rgba(51,49,50,1)",
+                      "next-button-font-size": "18px",
+                      "next-button-size": "standard",
+                      "next-button-text-color": "rgba(255,255,255,1)",
+                      "next-button-type": "filled_rectangle",
+                      "referral-history-completed-points-text": "{{points}} POINTS",
+                      "referral-history-completed-status-type": "text",
+                      "referral-history-confirmed-status": "COMPLETED",
+                      "referral-history-pending-status": "PENDING",
+                      "referral-history-redeem-text": "Be on the lookout for your reward when your friend completes their purchase!",
+                      "referral-history-sumup-line-points-text": "{{points}} POINTS",
+                      "referral-history-sumup-line-text": "Your Rewards",
+                      "referral-views-button-text": "SEND",
+                      "referral-views-copy-link-button-text": "COPY LINK",
+                      "referral-views-description": "Give your friends $25 off on their first order of $125+ (excluding Final Sale items) and get $25 for each successful referral.",
+                      "referral-views-email-share-body": "How does a discount off your first order at {{company_name}} sound? Use the link below and once you've shopped, I'll get a reward too.\n{{referral_link}}",
+                      "referral-views-email-share-subject": "Discount to a Store You'll Love!",
+                      "referral-views-email-share-type": "marketing_email",
+                      "referral-views-header": "Refer a Friend",
+                      "referral-views-personal-email-button-text": "SEND VIA MY EMAIL",
+                      "referral-views-sms-button-text": "SEND VIA SMS",
+                      "referral-views-title": "GIVE $25, GET $25",
+                      "referral-views-whatsapp-button-text": "SEND VIA WHATSAPP",
+                      "share-allow-copy-link": true,
+                      "share-allow-email": true,
+                      "share-allow-facebook": true,
+                      "share-allow-sms": true,
+                      "share-allow-twitter": true,
+                      "share-allow-whatsapp": true,
+                      "share-facebook-description": "You’ll love {{company_name}} as much as I do",
+                      "share-facebook-header": "Earn A Discount When You Shop Today!",
+                      "share-facebook-image-url": "",
+                      "share-icons-color": "rgba(51,49,50,1)",
+                      "share-settings-copyLink": true,
+                      "share-settings-default-checkbox": true,
+                      "share-settings-default-mobile-checkbox": true,
+                      "share-settings-email": true,
+                      "share-settings-facebook": true,
+                      "share-settings-fbMessenger": true,
+                      "share-settings-mobile-copyLink": true,
+                      "share-settings-mobile-email": true,
+                      "share-settings-mobile-facebook": true,
+                      "share-settings-mobile-fbMessenger": true,
+                      "share-settings-mobile-sms": true,
+                      "share-settings-mobile-twitter": true,
+                      "share-settings-mobile-whatsapp": true,
+                      "share-settings-twitter": true,
+                      "share-settings-whatsapp": false,
+                      "share-sms-message": "I love {{company_name}}! Shop through my link to get a reward {{referral_link}}",
+                      "share-twitter-message": "These guys are great! Get a discount using my link: ",
+                      "share-whatsapp-message": "I love {{company_name}}! Shop through my link to get a reward {{referral_link}}",
+                      "tab-size": "medium",
+                      "tab-type": "lower_line",
+                      "tab-view-primary-tab-text": "REFER A FRIEND",
+                      "tab-view-secondary-tab-text": "YOUR REFERRALS",
+                      "tile-color": "rgba(248,248,249,1)",
+                      "title-color": "rgba(195,144,125,1)",
+                      "title-font-size": "28px",
+                      "view-exit-intent-enabled": false,
+                      "view-exit-intent-mobile-timeout-ms": 10000,
+                      "view-is-popup": false,
+                      "view-layout": "right",
+                      "view-popup-delay-ms": 0,
+                      "view-show-popup-on-exit": false,
+                      "view-show-referral-history": "true",
+                      "view-table-rectangular-dark-pending-color": "rgba( 0, 0, 0, 0.6 )",
+                      "view-table-rectangular-light-pending-color": "#FFFFFF",
+                      "view-table-selected-color": "rgba(195,144,125,1)",
+                      "view-table-theme": "dark",
+                      "view-table-type": "lines",
+                      "wadmin-text-and-share-choose-sreen": "step_2"
+                    },
+                    staticContent: {
+                      "companyName": "VICI",
+                      "currency": "USD",
+                      "hasPrimaryFontsFeature": true,
+                      "isMultiCurrencyEnabled": false,
+                      "merchantId": "69314",
+                      "migrateTabColorToBackground": true,
+                      "platformName": "shopify",
+                      "referralHistoryEnabled": true,
+                      "referralHost": "http://rwrd.io"
+                    },
+                    className: "ReferralWidget",
+                    dependencyGroupId: null
+                },
+            
+            },
+            guidStaticContent: {},
+            dependencyGroups: {}
+        },
+        initializer: "https://cdn-widget-assets.yotpo.com/widgets-initializer/app.v0.0.41-2458.js",
+        analytics: "https://p.yotpo.com/js/bundle.js"
+    }
+    var initWidgets = function (config) {
+        const widgetInitializer = yotpoWidgetsContainer['yotpo_widget_initializer'](config);
+        return widgetInitializer.initWidgets();
+    };
+    var onInitializerLoad = function (config) {
+        yotpoWidgetsContainer.initWidgets = function () {
+            return initWidgets(config);
+        }
+        yotpoWidgetsContainer.initWidgets();
+    };
+    if (!yotpoWidgetsContainer.yotpo_widget_scripts_loaded) {
+        yotpoWidgetsContainer.yotpo_widget_scripts_loaded = true;
+        yotpoWidgetsContainer.onInitializerLoad = function () { onInitializerLoad(loader.config) };
+        loader.loadDep(loader.analytics, function () {}, 'defer');
+        
+        loader.loadDep(loader.initializer, function () { yotpoWidgetsContainer.onInitializerLoad() }, 'async');
+        
+    }
+})()
+
