@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "chokidar": "^3.5.2",
+    "nunjucks": "^3.2.3"
+  },
+  "name": "brightonyoung.github.io",
+  "description": "Thanks for downloading this template!",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brightonyoung/brightonyoung.github.io.git"
+  },
+  "author": "Brighton Young",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brightonyoung/brightonyoung.github.io/issues"
+  },
+  "homepage": "https://github.com/brightonyoung/brightonyoung.github.io#readme"
+}
