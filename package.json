@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "chokidar": "^3.5.2",
+    "lodash": "^4.17.21",
     "nunjucks": "^3.2.3"
   },
   "name": "brightonyoung.github.io",
@@ -8,7 +9,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^4.0.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
